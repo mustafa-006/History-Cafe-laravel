@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+<link rel = "stylesheet"href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel = "stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <style>
+body{
+    margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif; 
+      background-color: #f9f9f9; 
+    height: 100vh;
+}
+nav{
+    background-color: #ffb6c1; 
+      padding: 10px;
+      text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+      color: #333; 
+      padding: 10px 15px;
+      display: inline-block;
+      margin-right: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+nav a:hover {
+    background-color: #00aeff; 
+    }
+nav ul li{
+text-decoration: none;
+display: flex;
+flex-direction:column;
+}
+ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+#info{
+    height: 60vh;
+    background-color: #54c9ff;
+}
+
+
+    .hover_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+    }
+
+    .hover_wrap figure {
+        width: 400px;
+        margin: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    .hover_wrap figure img {
+        width: 100%;
+        display: block;
+        transition: all .3s ease;
+        border-radius: 4px;
+    }
+
+    .hover_wrap figure figcaption {
+        position: absolute;
+        left: 50%; top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition: all .3s ease;
+        background: #000;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .hover_wrap figure figcaption strong {
+        color: #fff;
+        z-index: 20;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+
+    .hover_wrap figure:hover img {
+        opacity: 0.1;
+    }
+
+    .hover_wrap figure.hover5 figcaption{transform: translate(150%, -50%) rotate(360deg)}
+    .hover_wrap figure.hover6 figcaption{transform: translate(-250%, -50%) rotate(-360deg)}
+    .hover_wrap figure:hover figcaption{transform: translate(-50%, -50%)}
+ 
+    @media(max-width:800px) {
+        .hover_wrap {
+            flex-direction: column;
+        }
+    }
+
+img{
+    width: 400px;
+    height: 300px;
+}
+
+#hti{
+    height: 50vh;
+    background-color: #e6dbdb;
+}
+.sl{
+    text-align: center;
+}
+header{
+    font-size: 29px;
+}
+
+.m{
+    font-size: 40px;
+    font-style: oblique;
+   color: rgba(210, 105, 30, 0.836);
+   text-anchor: initial;
+   font-weight:bold;
+   justify-content: space-around;
+}
+#nehaya{
+height: 50vh;
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+*{
+  text-decoration: none;
+}
+#eg{
+
+}
+.lh{
+  font-size: 26px;
+  color: rgb(64, 134, 214);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <section>
+    <nav>
+        <ul>
+            <li><a id="eg" href="#eg"> history of Egypt</a></li>
+            <li><a id = "pha" href ="#pha"> History of the Pharaohs</a></li>
+            <li><a id="isl" href="#isl"> Islamic history</a></li>
+            <li><a id="dpd" href="#dpd"> more....  </a></li>
+        </ul>
+    </nav>
+</section>
+
+<section id="info">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <div class="hover_wrap">
+            <figure class="hover5">
+                <img src="jerusalem-palestinian-al-aqsa-mosque-cartoon-illustration-free-vector.jpg" alt="이미지1">
+                <figcaption><strong>videos </strong></figcaption>
+            </figure>
+            <figure class="hover6">
+                <img src="abstract-background-egypt-showcasing-history-with-illustration-background-depicting-ancient-wonders-egyptian-pyramids-sphinx-generative-ai_198565-7664.avif" alt="이미지1">
+                <figcaption><strong>videos  </strong></figcaption>
+            </figure>
+        </div>
+</section>
+<!--the section for paragraph and title-->
+<section id="hti">
+<div class="sl">
+<header>video's corner</header>
+<h3>Just choose what you like to watch!</h3>
+<h3>Enjoy your free time .</h3><br>
+<p class="m">HISTORY CAFE</p>
+</div>    
+</section>
+
+<section id="nehaya">
+ 
+
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About Us</h6>
+          <p class="text-justify">We are a history cafe team, and we developed this site to include many beautiful and interesting historical stories, not anonymous, such as some sites that publish historical stories of fraud in order to foment controversy and gain profits, and we also encourage children to read and make use of the many information by doing some activities for children, drawing, competitions, and many other activities that will be added in the coming days.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="">Art corner</a></li>
+            <li><a href="">Leaderboard</a></li>
+            <li><a href="">Reading</a></li>
+            <li><a href="">videos</a></li>
+            <li><a href="">Game</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">programmers &copy; mustafa and zeyad <span class="lh">(Web Development)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+</footer>
+</section>
+
+
+    <script>
+      // da hayda5alak 3la saf7et tare5 masr
+document.getElementById("eg").addEventListener("click",function(){
+  location.href="historyegy.html";
+});
+      // da ba2a hayda5alna 3la saf7et el fara3nah
+document.getElementById("pha").addEventListener("click",function(){
+  location.href="historypha.html";
+});
+
+      // da ba2a hayda5alna 3la saf7et el taree5 el eslamy
+      document.getElementById("isl").addEventListener("click",function(){
+  location.href="historyislam.html";
+});
+document.getElementById("dpd").addEventListener("click",function(){
+
+  /* its the prompt => will ask you
+  what are you wann read and then => to the correct file
+  */
+var pro = prompt("please tell me what are you want to read ?", "write what are you want to read about")
+
+// the start of the operation
+
+if(pro == "امريكا" || pro == "america"){
+location.href="america.html"
+}
+
+else if(pro == "الاتحاد السوفييتي"){
+  location.href="etehad.html"
+}
+
+else if(pro == "الحرب العالمية الاولى " || pro =="ww1"){
+  location.href="wwone.html"
+}
+
+});
+
+    </script>
+
+
+</body>
+</html>
